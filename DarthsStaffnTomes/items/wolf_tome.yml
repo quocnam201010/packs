@@ -1,0 +1,15 @@
+wolf_tome:
+  Id: book
+
+  Display: '&bWolf Tome'
+  Lore:
+    - <white>
+    - <dark_grey>Vũ Felix</dark_grey>
+  Options:
+    Repairable: true
+    PreventStacking: true
+    ItemModel: aolu_snt:lucent_tome
+
+  Skills:
+  - skill{s=wolf_tome;cooldown=60} @self ~onUse
+

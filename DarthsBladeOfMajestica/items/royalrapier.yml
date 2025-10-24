@@ -1,0 +1,17 @@
+royalrapier:
+  Id: iron_sword
+  Attributes:
+    MainHand:
+      AttackSpeed: 1 ADD
+      AttackDamage: 3 ADD
+  Display: '&bRoyal Rapier'
+  Lore:
+    - <white>
+    - <dark_grey>Vũ Felix</dark_grey>
+  Options:
+    Repairable: true
+
+    ItemModel: minecraft:royalrapier
+  Skills:
+    - particles{particle=soul_fire_flame;a=10;hs=0.0;vs=0.0;y=0.0;s=0.0;useEyeLocation=true;yOffset=0.1;forwardOffset=0.40;sideOffset=-0.18} @self ~onTimer:1
+    - particles{particle=flame;a=10;hs=0.0;vs=0.0;y=0.0;s=0.0;useEyeLocation=true;yOffset=0.1;forwardOffset=0.40;sideOffset=-0.18;repeat=20;repeati=1} @self ~onAttack

@@ -1,0 +1,10 @@
+abominableblade:
+  Id: iron_sword
+  Display: '&bAbominable Blade'
+  Lore:
+
+    - <white>
+
+    - <dark_grey>Vũ Felix</dark_grey>
+  Options:
+    ItemModel: minecraft:abominableblade

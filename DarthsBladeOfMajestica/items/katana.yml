@@ -1,0 +1,36 @@
+katana:
+  Id: iron_sword
+  Attributes:
+    MainHand:
+      AttackSpeed: -2.6 ADD
+      AttackDamage: 6 ADD
+  Display: '&bKatana'
+  Lore:
+    - <white>
+    - <dark_grey>Vũ Felix</dark_grey>
+  Options:
+    Repairable: true
+
+    ItemModel: minecraft:katana
+  Skills:
+  - skill{s=katana_dash} @self ~onUse
+
+katana_diamond:
+  Id: diamond_sword
+  Attributes:
+    MainHand:
+      AttackSpeed: -2.5 ADD
+      AttackDamage: 8 ADD
+  Display: '&dKatana'
+  Lore:
+    - <white>
+    - <gray>Diamond</gray>
+    - <white>
+    - <dark_grey>Vũ Felix</dark_grey>
+  Options:
+    Repairable: true
+
+    ItemModel: minecraft:katana
+  Skills:
+  - skill{s=katana_dash_diamond} @self ~onUse
+

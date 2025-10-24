@@ -1,0 +1,23 @@
+katana_dash:
+  Conditions:
+    - crouching true 
+  Cooldown: 5
+  
+  Skills:
+    - lunge{velocity=10;velocityY=0;delay=5} @Self
+    - particleline{particle=end_rod;amount=10;distancebetween=0.25;useeyelocation=true;spread=0.02;yoffset=-0.3;delay=5} @Forward{f=11;lockpitch=true;uel=true}
+    - damage{a=10;repeat=10;repeati=1;delay=4} @EIR{r=1.5}
+    - playanimation{a=0;audience=World;delay=3} @Self
+    - potion{type=RESISTANCE;duration=25;level=2;delay=3} @self
+
+katana_dash_diamond:
+  Conditions:
+    - crouching true 
+  Cooldown: 6
+  
+  Skills:
+    - lunge{velocity=10;velocityY=0;delay=5} @Self
+    - particleline{particle=end_rod;amount=10;distancebetween=0.25;useeyelocation=true;spread=0.02;yoffset=-0.3;delay=5} @Forward{f=11;lockpitch=true;uel=true}
+    - damage{a=16;repeat=10;repeati=1;delay=4} @EIR{r=1.5}
+    - playanimation{a=0;audience=World;delay=3} @Self
+    - potion{type=RESISTANCE;duration=25;level=3;delay=3} @self

@@ -1,0 +1,36 @@
+wakizashi:
+  Id: iron_sword
+  Attributes:
+    MainHand:
+      AttackSpeed: -2.0 ADD
+      AttackDamage: 4 ADD
+  Display: '&bWakizashi'
+  Lore:
+    - <white>
+    - <dark_grey>Vũ Felix</dark_grey>
+  Options:
+    Repairable: true
+
+    ItemModel: minecraft:wakizashi
+  Skills:
+  - skill{s=wakizashi_dash} @self ~onUse
+
+
+wakizashi_diamond:
+  Id: diamond_sword
+  Attributes:
+    MainHand:
+      AttackSpeed: -2.1 ADD
+      AttackDamage: 5 ADD
+  Display: '&dWakizashi'
+  Lore:
+    - <white>
+    - <gray>Diamond</gray>
+    - <white>
+    - <dark_grey>Vũ Felix</dark_grey>
+  Options:
+    Repairable: true
+
+    ItemModel: minecraft:wakizashi
+  Skills:
+  - skill{s=wakizashi_dash_diamond} @self ~onUse

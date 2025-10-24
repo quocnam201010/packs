@@ -1,0 +1,17 @@
+dummy:
+  Type: skeleton
+  Display: 'Dummy'
+
+  Health: 100
+  Options:
+    NoAI: true
+    PreventRandomEquipment: true
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    PreventSunburn: true
+  Disguise: player Yukiokundummy
+
+  Drops:
+  - hay_block 1 1.0
+  - hay_block 1 0.8
+  - carved_pumpkin 1 1.0

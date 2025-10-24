@@ -1,0 +1,28 @@
+broom:
+  Id: STICK
+  Attributes:
+    MainHand:
+      AttackSpeed: +100 ADD
+  Display: <gold>Broom</gold>
+  Lore:
+    - <white>
+    - <dark_grey>Made by Vũ Felix</dark_grey>
+    - <white>
+  Options:
+    Repairable: false
+    Unbreakable: true
+    HideFlags: true
+    PreventStacking: true
+    ItemModel: minecraft:broom
+  Skills:
+  - cancelEvent ~onAttack
+  - damage{a=1.5;preventimmunity=true} @target ~onAttack
+  - sound{sound=catlean:range-in;cooldown=5} @self ~onAttack
+  - sound{sound=catlean:totem-pop;cooldown=5} @self ~onDamaged 
+  - sound{sound=catlean:startup;cooldown=5} @self ~onHold
+  - sound{sound=catlean:shutdown;cooldown=5} @self ~onUnHeld
+  - sound{sound=catlean:first-launch}  @self ~onPickup 
+ 
+ 
+
+

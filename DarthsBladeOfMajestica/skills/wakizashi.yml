@@ -1,0 +1,34 @@
+
+wakizashi_dash:
+  Cooldown: 40
+  Conditions:
+  - crouching true
+  Skills:
+    - skill{s=wakizashi_dash_function;repeat=10;repeatinterval=10} @self
+wakizashi_dash_function:
+  Skills:
+    - lunge{velocity=2;velocityY=0;delay=3} @Self
+    - particleline{particle=end_rod;amount=10;distancebetween=0.25;useeyelocation=true;spread=0.02;yoffset=-0.3;delay=3} @Forward{f=4;lockpitch=true;uel=true}
+    - damage{a=3;repeat=10;repeati=1;delay=3} @EIR{r=1.5}
+    - playanimation{a=0;audience=World;delay=1} @Self
+    - potion{type=RESISTANCE;duration=15;level=2} @self
+
+
+
+
+wakizashi_dash_diamond:
+  Cooldown: 45
+  Conditions:
+  - crouching true
+  Skills:
+    - skill{s=wakizashi_dash_diamond_function;repeat=5;repeatinterval=7} @self
+wakizashi_dash_diamond_function:
+  Skills:
+    - lunge{velocity=2;velocityY=0;delay=3} @Self
+    - particleline{particle=end_rod;amount=10;distancebetween=0.25;useeyelocation=true;spread=0.02;yoffset=-0.3;delay=3} @Forward{f=4;lockpitch=true;uel=true}
+    - damage{a=7;repeat=10;repeati=1;delay=3} @EIR{r=1.5}
+    - playanimation{a=0;audience=World;delay=1} @Self
+    - potion{type=RESISTANCE;duration=15;level=2} @self
+
+
+

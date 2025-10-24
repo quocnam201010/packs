@@ -1,0 +1,22 @@
+abominablescythe:
+  Id: iron_sword
+  Attributes:
+    MainHand:
+      AttackSpeed: -2 ADD
+  Display: '&bAbominable Scythe'
+  Lore:
+
+    - <white>
+
+    - <dark_grey>Vũ Felix</dark_grey>
+  Options:
+    PreventEnchanting: true
+    Repairable: false
+    Unbreakable: true
+    HideFlags: true
+    PreventAnvil: true
+    ItemModel: minecraft:abominablescythe
+  Skills:
+  - cancelEvent ~onAttack
+  - damage{pk=true;amount=7;delay=0} @target ~onAttack
+  - skill{skill=abominable_scythe_skill_1} @self ~onUse

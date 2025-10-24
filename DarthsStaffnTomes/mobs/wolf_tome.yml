@@ -1,0 +1,19 @@
+wolf_tome_summon:
+  Type: wolf
+  Options:
+    MovementSpeed: 0.38
+    FollowRange: 64
+  Equipment:
+  - diamond_sword HAND
+
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - gotoowner{droptarget=false}
+  AITargetSelectors:
+  - clear
+  - OwnerAttacker
+  - OwnerTarget
+  - hurtbytarget
+  Skills:
+  - remove{delay=1300} @self ~onSpawn

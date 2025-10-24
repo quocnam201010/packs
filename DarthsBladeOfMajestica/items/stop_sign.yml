@@ -1,0 +1,31 @@
+stop_sign:
+  Id: iron_axe
+  Attributes:
+    MainHand:
+      AttackSpeed: -3.6 ADD
+      AttackDamage: 8 ADD
+  Display: '&bStop Sign'
+  Lore:
+    - <white>
+    - <dark_grey>Vũ Felix</dark_grey>
+  Options:
+    Repairable: true
+
+    ItemModel: minecraft:stop_sign
+
+stop_sign_sugar_coated:
+  Id: mace
+  Attributes:
+    MainHand:
+      AttackSpeed: -3.8 ADD
+      AttackDamage: 10 ADD
+  Display: '&dStop Sign'
+  Lore:
+    - <white>
+    - <gray>Sugar Coated</gray>
+    - <white>
+    - <dark_grey>Vũ Felix</dark_grey>
+  Options:
+    Repairable: true
+
+    ItemModel: minecraft:stop_sign

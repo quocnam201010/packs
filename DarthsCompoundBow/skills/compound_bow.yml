@@ -1,0 +1,32 @@
+
+compound_bow_shoot:
+  Conditions:
+  - bowtension{value=>2.99} true
+  Skills:
+  - shoot{type=ARROW;velocity=1.4;damage=10;gravity=false;pickup=true;maxDistance=128;expiration=1200}
+  - effect:particles{particle=flame;amount=100;hS=0.1;vS=0.1;speed=0.5;yOffset=1.1} @self
+  - sound{s=item.flintandsteel.use;v=2} @EIR{radius=64}
+  - ignite{ticks=2} @self
+  
+  - CancelEvent ~onBowshoot 
+
+compound_bow_wind_charged_shoot:
+  Conditions:
+  - bowtension{value=>2.99} true
+  Skills:
+  - shoot{type=ARROW;velocity=0.6;damage=14;gravity=false;pickup=true;maxDistance=128;expiration=1200}
+  - effect:particles{particle=gust_emitter;amount=10;hS=1;vS=1;speed=0.5;yOffset=1.1} @self
+  - effect:particles{particle=gust;amount=10;hS=1;vS=1;speed=0.5;yOffset=1.1} @self
+  - sound{s=entity.wind_charge.wind_burst;v=1} @EIR{radius=64}
+  - CancelEvent ~onBowshoot 
+
+compound_bow_diamond_shoot:
+  Conditions:
+  - bowtension{value=>2.99} true
+  Skills:
+  - shoot{type=ARROW;velocity=1.1;damage=22;gravity=false;pickup=true;maxDistance=128;expiration=1200}
+  - effect:particles{particle=flame;amount=30;hS=0.1;vS=0.1;speed=0.2;yOffset=1.1} @self
+  - sound{s=item.flintandsteel.use;v=1.1} @EIR{radius=64}
+  - ignite{ticks=2} @self
+  
+  - CancelEvent ~onBowshoot 

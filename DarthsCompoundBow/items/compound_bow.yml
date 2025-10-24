@@ -1,0 +1,61 @@
+compound_bow:
+  Id: bow
+  Attributes:
+    MainHand:
+  Display: '&bCompound Bow'
+  Lore:
+    - <white>
+
+    - <dark_grey>Vũ Felix</dark_grey>
+  Options:
+    PreventEnchanting: true
+    Repairable: false
+    Unbreakable: true
+    HideFlags: true
+    ItemModel: minecraft:compound_bow
+  Skills:
+  - skill{s=compound_bow_shoot} ~onBowshoot
+  - potion{type=SLOW;duration=20;level=4} @self ~onTimer:1
+  - potion{type=WEAKNESS;duration=20;level=0} @self ~onTimer:1
+ 
+compound_bow_wind_charged:
+  Id: bow
+  Attributes:
+    MainHand:
+  Display: '&dCompound Bow'
+  Lore:
+    - <white>
+    - <gray>Wind charged</gray>
+    - <white>
+    - <dark_grey>Vũ Felix</dark_grey>
+  Options:
+    PreventEnchanting: true
+    Repairable: false
+    Unbreakable: true
+    HideFlags: true
+    ItemModel: minecraft:compound_bow
+  Skills:
+  - skill{s=compound_bow_wind_charged_shoot} ~onBowshoot
+  - potion{type=SLOW;duration=20;level=0} @self ~onTimer:1
+  - potion{type=WEAKNESS;duration=20;level=0} @self ~onTimer:1
+
+compound_bow_diamond:
+  Id: bow
+  Attributes:
+    MainHand:
+  Display: '&dCompound Bow'
+  Lore:
+    - <white>
+    - <gray>Diamond</gray>
+    - <white>
+    - <dark_grey>Vũ Felix</dark_grey>
+  Options:
+    PreventEnchanting: true
+    Repairable: false
+    Unbreakable: true
+    HideFlags: true
+    ItemModel: minecraft:compound_bow
+  Skills:
+  - skill{s=compound_bow_diamond_shoot} ~onBowshoot
+  - potion{type=SLOW;duration=20;level=0} @self ~onTimer:1
+  - potion{type=WEAKNESS;duration=20;level=0} @self ~onTimer:1
